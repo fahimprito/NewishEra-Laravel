@@ -5,27 +5,11 @@
     <link rel="stylesheet" href="{{ asset('style.css') }}">
 
 </head>
+
+@extends('layouts.public')
+@section('content')
 <body>
-	<header>
-		<div class="logo">
-			<img src="logo.png" alt="Newish Era Logo">
-		</div>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="search-bar">
-			<input type="text" placeholder="Search">
-			<button>Search</button>
-		</div>
-		<div class="cart-icon">
-			<a href="#"><img src="cart.png" alt="Cart Icon"></a>
-		</div>
-	</header>
+	
 	<main>
 		<section class="hero">
 			<h1>Shop Our Collection</h1>
@@ -74,22 +58,9 @@
 			</div>
 		</section>
 	</main>
-	<footer>
-		<div class="links">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul
-            <p> &copy; 2023 Ecommerce Store. All rights reserved.</p>
-        </div>
-        <div class="social-media">
-            <a href="#"><img src="facebook.png" alt="Facebook Icon"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter Icon"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram Icon"></a>
-        </div>
-    </footer>
+	
 
 </body>
 </html>
+
+@endsection
